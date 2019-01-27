@@ -341,7 +341,17 @@
     <a onclick="#" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Add to Cart</a>
     <span class="popuptext" id="myPopup">A Simple Popup!</span>
     <script src="../../material.min.js"></script>
-    
+	  
+    $('#view-source').on('click',function(){
 
+gtag('event', "click", {
+  'event_category': "click_add_to_cart",
+  'event_label': "Add to cart",
+  'value': 1
+});
+
+})
+
+	  
   </body>
 </html>
